@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#grid-container {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: calc(100% / 16);
+    height: calc(100% / 16);
+}
