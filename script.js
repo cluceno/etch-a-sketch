@@ -30,7 +30,7 @@ function createGrid(input) {
     cell.style.height = `calc(100% / ${input})`
     cell.addEventListener("mouseover", () => {
         if (isDrawing) {
-            cell.style.backgroundColor = "black"; 
+            cell.style.backgroundColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`; 
         }
     })
     grid.appendChild(cell);
