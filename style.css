@@ -24,7 +24,17 @@ body {
     flex-wrap: wrap;
 }
 
-.cell {
-    width: calc(100% / 16);
-    height: calc(100% / 16);
+/* color grid and options */
+
+#customColor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    gap: 8px;
+    width: 100px;
 }
+
+#customColor li {
+    height: 30px;
+}
+
