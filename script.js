@@ -18,9 +18,6 @@ document.querySelectorAll("#customColor li").forEach(li => {
     li.style.backgroundColor = li.dataset.choice;
 })
 
-
-
-
 pixelDensity.addEventListener("click", () => {
     while (true) {
         size = Number((prompt("Enter grid size (1-100):")).trim());
@@ -43,11 +40,7 @@ randomColorButton.addEventListener("click", () => {
     isRandom = true;
 })
 
-
 resetButton.addEventListener("click", () => createGrid(size)); 
-
-
-
 
 function createGrid(input) {
 
@@ -72,6 +65,11 @@ function createGrid(input) {
         cell.addEventListener("click", () => {
             clickCount = clickCount > 1 ? 0.1 : clickCount + 0.1; 
             cell.style.opacity = clickCount;
+        })
+
+        cell.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            cell.style.backgroundColor = "";
         })
 
         grid.appendChild(cell);
