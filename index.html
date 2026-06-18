@@ -6,26 +6,52 @@
     <title>Etch a Sketch</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
-    <div id="grid-container"></div>
+    <div id="frame">
+        <h1 id="title">Etch a Sketch</h1>
+        <div id="content-row">
+            <div id="grid-container"></div>
 
-    <button id="pixelInput">Change Pixel Density</button>
+            <div id="right-console">
 
-    <span>Choose a Color</span>
-    <ul id="customColor">
-        <li data-choice="black"></li>
-        <li data-choice="grey"></li>
-        <li data-choice="green"></li>
-        <li data-choice="pink"></li>
-        <li data-choice="blue"></li>
-        <li data-choice="purple"></li>
-    </ul>
-    
-    <button id="randomColors">Randomize Colors</button>
-    <button id="reset">Reset</button>
-    
+
+                <div id="menu-container">
+                    <button id="pixelInput">Change Pixel Density</button>
+
+                    <span>Choose a Color</span>
+                    <ul id="customColor">
+                        <li data-choice="black"></li>
+                        <li data-choice="grey"></li>
+                        <li data-choice="green"></li>
+                        <li data-choice="pink"></li>
+                        <li data-choice="blue"></li>
+                        <li data-choice="purple"></li>
+                    </ul>
+            
+                    <button id="randomColors">Randomize Colors</button>
+                    <button id="reset">Reset</button>
+                </div>
+
+                <div id="instructions">
+                    <span>Left click: draw</span>
+                    <span>Right click: delete</span>
+                    <span>Click on a square to change transparency</span>
+                    <span>Have fun!</span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+   
 
 </body>
 </html>
